@@ -1,0 +1,26 @@
+{
+"manifest_version":2,
+
+"name":"Protein Tracker",
+"description":"Tracks the protein intake of the user",
+"version":"1",
+
+"browser_action":{
+"default_icon":"protein_tracker.png",
+"default_popup":"popup.html"
+},
+
+"permissions":[
+"storage",
+"notifications",
+"contextMenus"
+],
+
+"options_page":"options.html",
+
+"background":{
+"scripts":["eventPage.js"],
+"persistent":false
+}
+
+}
